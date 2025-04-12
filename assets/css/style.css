@@ -3,8 +3,17 @@
 
 body {
 
+    display: flex;
+    position: static;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-items:auto;
+  
+    margin: 0px 0px;
     background-color: white;
     font-family: roboto;
+
+    gap: 16px;
 
     .layout_menu_bar {
 
@@ -13,8 +22,8 @@ body {
         position: fixed;
         align-items: center;
         justify-content: space-between;
-        width: 1440px;
-        height: 56px;
+        min-width: 1440px;
+        min-height: 56px;
         background-color: gray;
         gap: 10px;
 
@@ -112,21 +121,27 @@ body {
 
 
         /* Layout central de multimedia */
-        display: flex;
+        
+        flex-direction: column;
         flex-basis: 1;
-  
-        width: 560px;
-        height: 315px;
-        background-color: orange;
+        min-width: 560px;
+        min-height: 315px;
+        width: 1450px;
 
-        gap: 16px;
+        background-color: rgb(162, 192, 169);
 
+       
+   
     }
 
     .layout_footer {
 
         /* Layout roda-pé */
 
+        height: 200px;
+        width: 1440px;
+    
+        background-color: gray;
     }
 
 }
