@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+
+    background-color: white;
+    font-family: roboto;
+
+    .layout_menu_bar {
+
+        /* Layout da barra de menu */
+        display: inline-flex;
+        position: fixed;
+        align-items: center;
+        justify-content: space-between;
+        width: 1440px;
+        height: 56px;
+        background-color: gray;
+        gap: 10px;
+
+        .menu_item {
+
+            margin: 10px;
+    
+            background-color: white;
+
+
+
+        }
+
+        .item_left {
+
+            display: flex;
+            justify-content:space-between;
+            align-items:center;
+            width: 146px;
+            height: 24px;
+
+            img {
+                padding: 5px;
+            }
+            
+
+        }
+
+        .item_center {
+
+            display: inline-flex;
+            justify-content: space-between;
+            border: 1px;
+            
+            background-color: white;
+
+            width: 404px;
+            height: 40px;
+
+            input {
+                border: 1px;
+                height: 100%;
+                width: 348px;
+                border: 1px;
+
+            }
+
+
+            .div_img {
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                width: 57px;
+                border: 1px;
+        
+                background-color: rgb(196, 196, 196);
+                border: 2px;
+                
+                img {
+
+                    width: 24px;
+                    height: 24px;
+                    align-self: center;
+
+                }
+            
+
+            }
+        }
+
+        .item_right {
+            display: inline-flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            width: 130px;
+            height: 34px;
+
+            img {
+
+                padding: 5px;
+                width: 24px;
+                height: 24px;
+
+            }
+
+        }
+
+    }
+
+
+    .layout_multimedia {
+
+
+        /* Layout central de multimedia */
+        display: flex;
+        flex-basis: 1;
+  
+        width: 560px;
+        height: 315px;
+        background-color: orange;
+
+        gap: 16px;
+
+    }
+
+    .layout_footer {
+
+        /* Layout roda-pé */
+
+    }
+
+}
