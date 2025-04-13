@@ -4,22 +4,20 @@
 body {
 
     display: flex;
-    position: static;
     flex-direction: column;
-    justify-content: space-around;
-    justify-items:auto;
-  
-    margin: 0px 0px;
-    background-color: white;
-    font-family: roboto;
 
+    flex-flow: column wrap;
     gap: 16px;
 
-    .layout_menu_bar {
+    align-items: center;
+
+    background-color: rgb(202, 202, 202);
+    font-family: roboto;
+
+    .menu_bar {
 
         /* Layout da barra de menu */
         display: inline-flex;
-        position: fixed;
         align-items: center;
         justify-content: space-between;
         min-width: 1440px;
@@ -64,10 +62,12 @@ body {
             height: 40px;
 
             input {
-                border: 1px;
-                height: 100%;
+              
+                height: inherit;
                 width: 348px;
-                border: 1px;
+
+                border: solid 0px;
+              
 
             }
 
@@ -77,12 +77,13 @@ body {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height: 100%;
+                height: inherit;
                 width: 57px;
-                border: 1px;
+                border: solid 1px;
+                border-color: gray;
         
                 background-color: rgb(196, 196, 196);
-                border: 2px;
+           
                 
                 img {
 
@@ -117,24 +118,67 @@ body {
     }
 
 
-    .layout_multimedia {
+    
+
+    .multimedia {
 
 
         /* Layout central de multimedia */
-        
-        flex-direction: column;
-        flex-basis: 1;
+      
+        flex-flow: row wrap;
+
         min-width: 560px;
         min-height: 315px;
-        width: 1450px;
+
+        width: 1440px;
+        height: 728px;
 
         background-color: rgb(162, 192, 169);
 
-       
+        .caption {
+
+            font-family: Roboto;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            width: 871px;
+            height: 23px;
+            padding: 5px;
+            
+        }
+
+        .caption_bar {
+
+            /* Video Actions */
+            /* Auto layout */
+            display: inline-flex;
+   
+            justify-content:space-around;
+            align-items: center;
+            padding: 5px;
+            gap: 42px;
+
+            width: 902px;
+            height: 42px;
+
+
+            /* Inside auto layout */
+  
+
+
+            .caption_itens {
+
+
+                display: inline-flex;
+                gap:3px;
+            }
+            
+        }
    
     }
 
-    .layout_footer {
+    .footer_bar {
 
         /* Layout roda-pé */
 
