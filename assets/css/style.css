@@ -5,7 +5,7 @@ body {
 
     display: flex;
 
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     gap: 16px;
 
     align-items: center;
@@ -123,68 +123,140 @@ body {
 
 
         /* Layout central de multimedia */
-      
+        display: flex;
         flex-flow: row wrap;
-
+        
         min-width: 560px;
         min-height: 315px;
 
         width: 1440px;
-        height: 728px;
+        height: 800px;
+
+        gap: 16px;
 
         background-color: rgb(162, 192, 169);
 
-        .caption {
 
-            font-family: Roboto;
-            font-weight: 600;
-            font-size: 20px;
-            line-height: 100%;
-            letter-spacing: 0%;
-            width: 871px;
-            height: 23px;
-            padding: 5px;
-            
-        }
+        .video {
 
-        .caption_bar {
-
-            /* Video Actions */
-            /* Auto layout */
-            display: inline-flex;
-   
-            justify-content:space-around;
-            align-items: center;
-            padding: 5px;
-            gap: 42px;
-
-            width: 902px;
-            height: 42px;
+          
+            width:"952px";
+            height:"537px";
+            border:5px;
+            border: solid;
 
 
-            /* Inside auto layout */
-  
+
+            .caption {
+
+                font-family: Roboto;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                width: 871px;
+                height: 23px;
+                padding: 5px;
+                
+            }
 
 
-            .caption_itens {
 
 
+            .caption_bar {
+
+                /* Video Actions */
+                /* Auto layout */
                 display: inline-flex;
-                gap:3px;
+    
+                justify-content:space-around;
+                align-items: center;
+                padding: 5px;
+                gap: 42px;
+
+                width: 902px;
+                height: 42px;
+
+
+                /* Inside auto layout */
+    
+
+
+                .caption_itens {
+
+
+                    display: inline-flex;
+                    gap:3px;
+                }
+
+                .sign_up {
+
+                    background-color: rgb(190, 0, 0);
+                    color: white;
+                    font-weight: 500;
+                    padding: 10px 15px;
+                    font-size: small;
+
+                }
+
+
+       
+
             }
 
-            .sign_up {
-
-                background-color: rgb(190, 0, 0);
-                color: white;
-                font-weight: 500;
-                padding: 10px 15px;
-                font-size: small;
+            .sub_caption {
 
 
+                display: flex;
+                
+    
+                text-align: left;
+                font-weight: 700;
+    
+                padding: 5px;
+    
             }
-            
+        
+                .comments {
+        
+                    display: flex;
+                    justify-content: left;
+
+                    text-align: left;
+        
+                    width: 510px;
+                    height: 64px;
+                    
+                    padding: 5px;
+        
+                    font-size: 14px;
+        
+        
+                }
+        
         }
+
+
+        .menu_right_01 {
+
+
+            display: flex;
+  
+            
+
+            flex-flow: row;
+
+            color:bisque;
+
+            background-color: orange;
+
+            width: 160px;
+            height: 800px;
+       
+        
+
+        }
+
    
     }
 
