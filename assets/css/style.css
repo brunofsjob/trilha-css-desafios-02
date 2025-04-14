@@ -172,6 +172,17 @@ body {
                 display: inline-flex;
                 gap:3px;
             }
+
+            .sign_up {
+
+                background-color: rgb(190, 0, 0);
+                color: white;
+                font-weight: 500;
+                padding: 10px 15px;
+                font-size: small;
+
+
+            }
             
         }
    
