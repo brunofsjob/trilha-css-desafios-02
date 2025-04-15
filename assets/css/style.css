@@ -1,273 +1,273 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 body {
 
     display: flex;
-
     flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    font-family: roboto;
     gap: 16px;
 
+}
+
+.menu_bar {
+
+    /* Layout da barra de menu */
+    display: inline-flex;
     align-items: center;
-
-    background-color: rgb(202, 202, 202);
-    font-family: roboto;
-
-    .menu_bar {
-
-        /* Layout da barra de menu */
-        display: inline-flex;
-        align-items: center;
-        justify-content: space-between;
-        min-width: 1440px;
-        min-height: 56px;
-        background-color: gray;
-        gap: 10px;
-
-        .menu_item {
-
-            margin: 10px;
-    
-            background-color: white;
-
-
-
-        }
-
-        .item_left {
-
-            display: flex;
-            justify-content:space-between;
-            align-items:center;
-            width: 146px;
-            height: 24px;
-
-            img {
-                padding: 5px;
-            }
-            
-
-        }
-
-        .item_center {
-
-            display: inline-flex;
-            justify-content: space-between;
-            border: 1px;
-            
-            background-color: white;
-
-            width: 404px;
-            height: 40px;
-
-            input {
-              
-                height: inherit;
-                width: 348px;
-
-                border: solid 0px;
-              
-
-            }
-
-
-            .div_img {
-
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: inherit;
-                width: 57px;
-                border: solid 1px;
-                border-color: gray;
-        
-                background-color: rgb(196, 196, 196);
-           
-                
-                img {
-
-                    width: 24px;
-                    height: 24px;
-                    align-self: center;
-
-                }
-            
-
-            }
-        }
-
-        .item_right {
-            display: inline-flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: white;
-            width: 130px;
-            height: 34px;
-
-            img {
-
-                padding: 5px;
-                width: 24px;
-                height: 24px;
-
-            }
-
-        }
-
-    }
-
-
-    
-
-    .multimedia {
-
-
-        /* Layout central de multimedia */
-        display: flex;
-        flex-flow: row wrap;
-        
-        min-width: 560px;
-        min-height: 315px;
-
-        width: 1440px;
-        height: 800px;
-
-        gap: 16px;
-
-        background-color: rgb(162, 192, 169);
-
-
-        .video {
-
-          
-            width:"952px";
-            height:"537px";
-            border:5px;
-            border: solid;
-
-
-
-            .caption {
-
-                font-family: Roboto;
-                font-weight: 600;
-                font-size: 20px;
-                line-height: 100%;
-                letter-spacing: 0%;
-                width: 871px;
-                height: 23px;
-                padding: 5px;
-                
-            }
-
-
-
-
-            .caption_bar {
-
-                /* Video Actions */
-                /* Auto layout */
-                display: inline-flex;
-    
-                justify-content:space-around;
-                align-items: center;
-                padding: 5px;
-                gap: 42px;
-
-                width: 902px;
-                height: 42px;
-
-
-                /* Inside auto layout */
-    
-
-
-                .caption_itens {
-
-
-                    display: inline-flex;
-                    gap:3px;
-                }
-
-                .sign_up {
-
-                    background-color: rgb(190, 0, 0);
-                    color: white;
-                    font-weight: 500;
-                    padding: 10px 15px;
-                    font-size: small;
-
-                }
-
-
-       
-
-            }
-
-            .sub_caption {
-
-
-                display: flex;
-                
-    
-                text-align: left;
-                font-weight: 700;
-    
-                padding: 5px;
-    
-            }
-        
-                .comments {
-        
-                    display: flex;
-                    justify-content: left;
-
-                    text-align: left;
-        
-                    width: 510px;
-                    height: 64px;
-                    
-                    padding: 5px;
-        
-                    font-size: 14px;
-        
-        
-                }
-        
-        }
-
-
-        .menu_right_01 {
-
-
-            display: flex;
-  
-            
-
-            flex-flow: row;
-
-            color:bisque;
-
-            background-color: orange;
-
-            width: 160px;
-            height: 800px;
-       
-        
-
-        }
-
-   
-    }
-
-    .footer_bar {
-
-        /* Layout roda-pé */
-
-        height: 200px;
-        width: 1440px;
-    
-        background-color: gray;
-    }
+    justify-content: space-between;
+    min-width: 1440px;
+    min-height: 56px;
+    background-color: white;
+    gap: 10px;
 
 }
+
+.menu_item {
+
+    margin: 10px;
+    background-color: white;
+
+}
+
+.item_left {
+
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    width: 146px;
+    height: 24px;
+}
+
+.item_left img {
+    
+    padding: 5px;
+
+}
+
+.item_center {
+
+/* central item bar */
+    display: inline-flex;
+    justify-content: space-between;
+    border: 1px;
+    
+    background-color: white;
+
+    width: 404px;
+    height: 40px;
+
+}
+
+input {
+    
+/* search button */
+    height: 38px;
+    width: 348px;
+    border: 1px solid rgb(206, 206, 206);;
+
+}
+
+.div_img {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    width: 57px;
+    border: solid 1px;
+    border-color: rgba(209, 208, 208, 0.185);
+    background-color: rgb(231, 230, 230);
+
+}
+
+.div_img img {
+
+    width: 24px;
+    height: 24px;
+    align-self: center;
+
+}
+
+#logo_yb {
+    width: 90px;
+    height: 20px;
+}
+
+
+.item_right {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    width: 130px;
+    height: 34px;
+
+}
+
+
+.multimedia {
+
+    /* Layout central de multimedia */
+    display: flex;
+    flex-flow: row nowrap;
+    
+    min-width: 560px;
+    min-height: 315px;
+
+    width: 1440px;
+    height: 1100px;
+
+    gap: 16px;
+
+    background-color: white;
+
+}
+
+.multimedia_track {
+
+/* div main itens-video */
+    width: 952px;
+    height: 737px;
+    border: 5px;
+    border: 0px;
+}
+
+
+.caption {
+
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    width: 871px;
+    height: 23px;
+    padding: 5px;
+}
+
+
+.caption_bar {
+
+    display: inline-flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 5px;
+    gap: 42px;
+    width: 902px;
+    height: 42px;
+}   
+
+
+.caption_itens {
+
+
+    display: inline-flex;
+    gap:3px;
+}
+
+.sign_up {
+
+    background-color: rgb(190, 0, 0);
+    color: white;
+    font-weight: 500;
+    padding: 10px 15px;
+    font-size: small;
+
+}
+            
+
+.sub_caption {
+
+    display: flex;
+    text-align: left;
+    font-weight: 700;
+
+    padding: 5px;
+
+}
+        
+.comments {
+
+    display: flex;
+    justify-content: left;
+
+    text-align: left;
+
+    width: 510px;
+    height: 64px;
+    
+    padding: 5px;
+
+    font-size: 14px;
+
+}
+
+.menu_right {
+
+
+    display:flex;
+    flex-flow: column nowrap;
+    gap:16px;
+}
+
+.sub_menu_row_binary {
+
+    display: flex;
+    flex-flow: row nowrap;
+    border: 3px;
+    
+}
+
+.img_video{
+
+
+    width: 160px;
+    height: 90px;
+    left: 176px;
+    border: 3px;
+
+}
+
+.vd_describe {
+
+    display: flex;
+    flex-flow: column nowrap;
+    width: 160px;
+    height: 90px;
+    left: 176px;
+    border: 3px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+    margin-left: 5px;
+
+    gap:10px;
+
+    
+}
+
+.vd_title {
+
+    font-stretch: 600;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+    
+.footer_bar {
+
+    height: 200px;
+    width: 1440px;
+
+    background-color: rgba(235, 235, 235, 0.363);
+}
+
